@@ -34,8 +34,8 @@ public class StorageMethod {
      */
     private Long parseExpirationTime() {
         int index = endIndexOfFirstNumber();
-        if (index < 0) {
-            return null;
+        if (index <= 0) {
+            return Long.valueOf(-1);
         }
 
         int amount = Integer.parseInt(expiration.substring(0, index));
