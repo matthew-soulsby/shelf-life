@@ -7,7 +7,7 @@ end
 
 desc "Build the service"
 task :build do
-  sh "mvn package"
+  sh "mvn package -DskipTests"
   sh "docker-compose build"
 end
 

@@ -1,5 +1,4 @@
-FROM java:8-jre
-MAINTAINER Jonathan Como <jonathan.como@gmail.com>
+FROM openjdk:8-jdk-alpine
 
 VOLUME /cfg
 COPY foodie.yml /cfg/foodie.yml
